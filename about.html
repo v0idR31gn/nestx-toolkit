@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Nest-X, a student-built cyber toolkit that brings five practical security tools into one friendly desktop app." />
+    <title>About | Nest-X Cyber Toolkit</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="Website NEST-X.html" aria-label="Nest-X home">
+                <img src="Nest -X logo.jpg" alt="Nest-X shield logo" />
+                <span>
+                    <span class="brand-name">NEST<span>-X</span></span>
+                    <span class="brand-sub">Cyber Toolkit</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="Website NEST-X.html">Home</a>
+                <a href="Website NEST-X.html#tools">Tools</a>
+                <a href="instructions.html">Instructions</a>
+                <a class="active" href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary header-cta" href="Website NEST-X.html#download">Download toolkit</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container page-hero">
+            <span class="badge"><span class="pulse-dot"></span> Our story</span>
+            <h1>Cyber learning should feel <span class="gradient-text">approachable.</span></h1>
+            <p>
+                Nest-X is a student-built toolkit that brings five practical security exercises into one
+                clean desktop workspace. No accounts, no cloud and no jargon walls — just tools that explain
+                what they find.
+            </p>
+        </section>
+
+        <section class="container section" style="padding-top: 8px;">
+            <div class="content-grid">
+                <article class="panel">
+                    <span class="eyebrow">The project</span>
+                    <h2>What is Nest-X?</h2>
+                    <p>
+                        Nest-X (HackOps Toolkit) is a smart, script-powered toolkit that rolls essential
+                        cybersecurity tasks into one simple application. It was created as a micro project for
+                        students, ethical hackers and anyone exploring the cyber world.
+                    </p>
+                    <p>
+                        Instead of installing a different program for each small task, you open one launcher
+                        and choose the tool you need. Each tool is designed to be understandable for beginners
+                        while still being useful in a lab or classroom.
+                    </p>
+                </article>
+
+                <article class="panel">
+                    <span class="eyebrow">The problem</span>
+                    <h2>Why we built it</h2>
+                    <p>
+                        The digital world faces constant threats: exposed services, weak passwords and hidden
+                        data. Professional security tools can be intimidating, expensive or hard to set up for
+                        someone who is just starting out.
+                    </p>
+                    <p>
+                        Nest-X bridges that gap. It turns common security concepts into short, guided exercises
+                        so a learner can see a result, understand the reason behind it, and build better habits.
+                    </p>
+                </article>
+
+                <article class="panel panel-wide">
+                    <span class="eyebrow">What's inside</span>
+                    <h2>Five focused utilities</h2>
+                    <div class="value-grid" style="margin-top: 18px;">
+                        <div class="value-card">
+                            <span class="value-index">01 / NETWORK</span>
+                            <h3>Port Scanner</h3>
+                            <p>Discover reachable TCP services and learn why exposed protocols need attention.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-index">02 / PASSWORDS</span>
+                            <h3>Strength Checker</h3>
+                            <p>See how length, variety, patterns and entropy affect password safety.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-index">03 / GENERATOR</span>
+                            <h3>Password Generator</h3>
+                            <p>Create cryptographically secure passwords with clear, simple controls.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-index">04 / FORENSICS</span>
+                            <h3>Metadata Extractor</h3>
+                            <p>Read EXIF, GPS and timestamps, then verify files with MD5, SHA-1 and SHA-256 hashes.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-index">05 / PHISHING</span>
+                            <h3>URL Detector</h3>
+                            <p>Score suspicious links with transparent heuristics before you decide to click.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-index">OFFLINE</span>
+                            <h3>Fully offline</h3>
+                            <p>Runs completely on your device without requiring an active internet connection.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-index">DESIGN</span>
+                            <h3>GUI + CLI</h3>
+                            <p>The desktop launcher covers the core tools; the command-line menu includes all five.</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-index">PRIVACY</span>
+                            <h3>Local by default</h3>
+                            <p>No accounts, no uploads and no hidden telemetry. Your data stays with you.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <span class="eyebrow">How it is built</span>
+                    <h2>Small stack, real concepts</h2>
+                    <p>
+                        The toolkit is written in Python and uses Tkinter for the interface. Sockets power the
+                        port scanner, <code>secrets</code> and entropy calculations power password generation
+                        and analysis, and <code>hashlib</code> plus the bundled ExifTool power metadata
+                        forensics. The phishing detector uses <code>urllib.parse</code> and
+                        <code>ipaddress</code> for safe, offline URL inspection.
+                    </p>
+                    <div class="tool-inline">
+                        <span>Python 3</span>
+                        <span>Tkinter</span>
+                        <span>Sockets</span>
+                        <span>secrets</span>
+                        <span>ExifTool</span>
+                        <span>hashlib</span>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <span class="eyebrow">Our values</span>
+                    <h2>Learn ethically</h2>
+                    <p>
+                        Knowledge should make the digital world safer, not more hostile. We believe security
+                        education must come with responsibility: only test systems you own or have explicit
+                        permission to assess.
+                    </p>
+                    <p>
+                        Nest-X is a learning aid, not an attack kit. Use it to understand, defend and teach.
+                    </p>
+                </article>
+            </div>
+
+            <div class="note">
+                <span class="note-icon">!</span>
+                <span>
+                    Nest-X was designed for educational and authorised testing only. The creators are not
+                    responsible for misuse, damage or consequences caused by these tools.
+                </span>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;">
+                <a class="btn btn-primary" href="Website NEST-X.html#download">Download the toolkit</a>
+                <a class="btn btn-secondary" href="contact.html">Meet the team</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand" href="Website NEST-X.html">
+                    <img src="Nest -X logo.jpg" alt="Nest-X shield logo" />
+                    <span>
+                        <span class="brand-name">NEST<span>-X</span></span>
+                        <span class="brand-sub">Cyber Toolkit</span>
+                    </span>
+                </a>
+                <p>Five practical cybersecurity tools in one friendly workspace, built for learners and ethical exploration.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="Website NEST-X.html#tools">Tools</a>
+                <a href="instructions.html">Instructions</a>
+                <a href="about.html">About Nest-X</a>
+                <a href="contact.html">Contact the team</a>
+            </div>
+            <div class="footer-disclaimer">
+                <h4>Use responsibly</h4>
+                <p>
+                    The creators of Nest-X are not responsible for misuse or damage caused by these tools.
+                    Everything here is meant for educational and authorised testing only.
+                </p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2025 Nest-X · St. Vincent Pallotti College</span>
+            <span class="made">Built for learning, not for breaking in.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
