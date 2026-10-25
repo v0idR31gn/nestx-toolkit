@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# NEST-X generated output
+nestx_reports/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Archives at the repository root only
+# (website/downloads/NestX_Toolkit.zip stays tracked)
+/*.zip
