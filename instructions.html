@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Step-by-step instructions for downloading, running and using the Nest-X cyber toolkit." />
+    <title>Instructions | Nest-X Cyber Toolkit</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="Website NEST-X.html" aria-label="Nest-X home">
+                <img src="Nest -X logo.jpg" alt="Nest-X shield logo" />
+                <span>
+                    <span class="brand-name">NEST<span>-X</span></span>
+                    <span class="brand-sub">Cyber Toolkit</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="Website NEST-X.html">Home</a>
+                <a href="Website NEST-X.html#tools">Tools</a>
+                <a class="active" href="instructions.html">Instructions</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary header-cta" href="Website NEST-X.html#download">Download toolkit</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container page-hero">
+            <span class="badge"><span class="pulse-dot"></span> Quick start guide</span>
+            <h1>How to use <span class="gradient-text">Nest-X.</span></h1>
+            <p>
+                Download once, extract the package and open the launcher. Everything runs locally — there is
+                no account to create and no cloud setup.
+            </p>
+        </section>
+
+        <section class="container section" style="padding-top: 8px;">
+            <div class="instruction-list">
+                <article class="instruction">
+                    <div>
+                        <h3>Download the toolkit</h3>
+                        <p>
+                            Go to the <a href="Website NEST-X.html#download" style="color:var(--accent);">download section</a>
+                            on the home page and click <strong>Download Nest-X Toolkit</strong>. You will receive
+                            one ZIP file named <code>NestX_Toolkit.zip</code>.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="instruction">
+                    <div>
+                        <h3>Extract the package</h3>
+                        <p>
+                            Unzip the file with Windows Explorer, 7-Zip, WinRAR or your system archive tool.
+                            Keep <code>nestx_launcher.py</code>, <code>NESTX_Toolkit.py</code>,
+                            <code>exiftool.exe</code>, the <code>exiftool_files</code> folder and the
+                            <code>.bat</code> launchers in the same folder.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="instruction">
+                    <div>
+                        <h3>Check Python</h3>
+                        <p>
+                            Nest-X needs Python 3.9 or newer. On Windows, Tkinter is included with the official
+                            Python installer. If Python is missing, install it from
+                            <a href="https://www.python.org/downloads/" target="_blank" rel="noopener" style="color:var(--accent);">python.org</a>
+                            and keep the “Add Python to PATH” option enabled.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="instruction">
+                    <div>
+                        <h3>Open the launcher</h3>
+                        <p>
+                            Double-click <strong>Run_NestX.bat</strong> for the desktop GUI, or open a terminal
+                            in the extracted folder and run:
+                        </p>
+                        <code class="code-line" style="display:inline-block;margin-top:10px;">python nestx_launcher.py</code>
+                        <p style="margin-top:12px;">
+                            For the five-tool command-line menu, double-click <strong>run_cli.bat</strong> or run:
+                        </p>
+                        <code class="code-line" style="display:inline-block;margin-top:10px;">python NESTX_Toolkit.py</code>
+                    </div>
+                </article>
+
+                <article class="instruction">
+                    <div>
+                        <h3>Choose a tool</h3>
+                        <p>
+                            Use the desktop sidebar to switch between the core tools, or pick an option in the
+                            command-line menu. Each tool has guided prompts, inline explanations and a clear
+                            result area.
+                        </p>
+                        <div class="tool-inline">
+                            <span>Port Scanner</span>
+                            <span>Password Checker</span>
+                            <span>Password Generator</span>
+                            <span>Metadata Extractor</span>
+                            <span>Phishing URL Detector</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="instruction">
+                    <div>
+                        <h3>Use it ethically</h3>
+                        <p>
+                            Only scan systems you own or have written permission to test. Never use the toolkit
+                            to access, damage or disrupt someone else's device or network. It is a learning aid,
+                            not an attack kit.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="content-grid" style="margin-top: 20px;">
+                <article class="panel">
+                    <span class="eyebrow">Troubleshooting</span>
+                    <h3>Launcher will not open?</h3>
+                    <p>
+                        Confirm that Python is available by running <code>python --version</code>. If Tkinter is
+                        missing on Linux, install your distribution's Tk package. On Windows, reinstalling Python
+                        with the default options restores Tkinter.
+                    </p>
+                </article>
+                <article class="panel">
+                    <span class="eyebrow">Metadata extractor</span>
+                    <h3>ExifTool was not found?</h3>
+                    <p>
+                        Keep <code>exiftool.exe</code> and the <code>exiftool_files</code> folder next to
+                        <code>NESTX_Toolkit.py</code>. Alternatively, install ExifTool and make sure it is in
+                        PATH, then run the tool again.
+                    </p>
+                </article>
+            </div>
+
+            <div class="note">
+                <span class="note-icon">!</span>
+                <span>
+                    Some antivirus products may flag a port scanner because of its network behaviour. The
+                    source code is plain Python in <code>nestx_launcher.py</code> and
+                    <code>NESTX_Toolkit.py</code>, and can be reviewed before running. Only use the tool on
+                    networks you are authorised to test.
+                </span>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;">
+                <a class="btn btn-primary" href="Website NEST-X.html#download">Download Nest-X Toolkit</a>
+                <a class="btn btn-secondary" href="Website NEST-X.html">Back to home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand" href="Website NEST-X.html">
+                    <img src="Nest -X logo.jpg" alt="Nest-X shield logo" />
+                    <span>
+                        <span class="brand-name">NEST<span>-X</span></span>
+                        <span class="brand-sub">Cyber Toolkit</span>
+                    </span>
+                </a>
+                <p>Five practical cybersecurity tools in one friendly workspace, built for learners and ethical exploration.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="Website NEST-X.html#tools">Tools</a>
+                <a href="instructions.html">Instructions</a>
+                <a href="about.html">About Nest-X</a>
+                <a href="contact.html">Contact the team</a>
+            </div>
+            <div class="footer-disclaimer">
+                <h4>Use responsibly</h4>
+                <p>
+                    The creators of Nest-X are not responsible for misuse or damage caused by these tools.
+                    Everything here is meant for educational and authorised testing only.
+                </p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2025 Nest-X · St. Vincent Pallotti College</span>
+            <span class="made">Built for learning, not for breaking in.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
