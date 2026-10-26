@@ -78,8 +78,8 @@ NEST-X is a learning aid, not an attack kit.
 
 ## Credits
 
-NEST-X project team
+NEST-X Project Team
 St. Vincent Pallotti College of Engineering and Technology
 Prof. Neha Zade (Project Guide)
 
-Built for learning, not for breaking in.
+Think Offensively. Defend Ethically. Build Securely. 🔐
